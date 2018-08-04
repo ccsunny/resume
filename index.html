@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>[简历]Cecilia-前端开发工程师</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <header class="header"></header>
+    <article class="container">
+        <section class="side" id="side">
+            <!-- 左栏固定开关，记得及时删除这段代码 Start-->
+            <label class="switch" style="display: none;" onchange="switchFixed()">
+                <script type="text/javaScript">
+                    function switchFixed(){ var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed'; document.getElementById('side').style.position
+                    = value; }
+                </script>
+                <input id="cb" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <style>
+                @media (min-width: 414px) {
+                    .switch {
+                        position: relative;
+                        display: inline-block !important;
+                        width: 60px;
+                        height: 34px;
+                    }
+                    .switch input {
+                        display: none;
+                    }
+                    .slider {
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: #ccc;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+                    }
+                    .slider:before {
+                        position: absolute;
+                        content: "";
+                        height: 26px;
+                        width: 26px;
+                        left: 4px;
+                        bottom: 4px;
+                        background-color: white;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+                    }
+                    input:checked+.slider {
+                        background-color: #1abc9c;
+                    }
+                    input:focus+.slider {
+                        box-shadow: 0 0 1px #1abc9c;
+                    }
+                    input:checked+.slider:before {
+                        -webkit-transform: translateX(26px);
+                        -ms-transform: translateX(26px);
+                        transform: translateX(26px);
+                    }
+                    .slider.round {
+                        border-radius: 34px;
+                    }
+                    .slider.round:before {
+                        border-radius: 50%;
+                    }
+                }
+            </style>
+            <!-- 左侧固定开关，记得及时删除这段代码 End-->
+            <!-- 个人肖像 -->
+            <section class="me">
+                <section class="portrait">
+                    <div class="loading">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- 头像照片 -->
+                    <img class="avatar" src="assets/images/avatar.jpg" onload="loading()">
+                </section>
+                <h1 class="name">Cecilia</h1>
+                <h4 class="info-job">前端开发工程师</h4>
+            </section>
+            <!-- 基本信息 -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>英文名字</label>
+                        <a href="http://47.98.144.147:9019" target="_blank">Cecilia</a>
+                    </li>
+                    <li>
+                        <label>工作经验</label>
+                        <span>两年开发经验👩‍💻</span>
+                    </li>
+                    <li>
+                        <label>个人爱好</label>
+                        <span>宅/探索新的知识✍️</span>
+                    </li>
+                    <li>
+                        <label>个性签名</label>
+                        <span>💡选择大于努力</span>
+                    </li>
+                </ul>
+            </section>
+            <!-- 联系方式 -->
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>联系方式</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>手机</label>
+                        <a href="tel:15981850048" target="_blank">15981850048</a>
+                    </li>
+                    <li>
+                        <label>邮箱</label>
+                        <a href="2953345605@qq.com" target="_blank">2953345605@qq.com</a>
+                    </li>
+                    <li>
+                        <label>个人博客</label>
+                        <a href="http://ccsunny.github.io" target="_blank">ccsunny.github.io</a>
+                    </li>
+                    <li>
+                        <label>Github</label>
+                        <a href="https://github.com/ccsunny" target="_blank">github.com/ccsunny</a>
+                    </li>
+                </ul>
+            </section>
+            <!-- 技能点 -->
+            <section class="skill info-unit">
+                <h2>
+                    <i class="fa fa-code" aria-hidden="true"></i>技能点</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>HTML/CSS</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>JavaScript</label>
+                        <progress value="65" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Jquery</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Vue/angularJs</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>PHP/mysql</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>小程序</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                </ul>
+            </section>
+            <!-- 技术栈 -->
+            <div class="stack info-unit">
+                    <h2><i class="fa fa-code" aria-hidden="true"></i>其他</h2>
+                    <hr/>
+                    <ul>
+                        <li>
+                            <label>前端</label>
+                            <span>jQuery、Bootstrap、Vue、LESS、SASS</span>
+                        </li>
+                        <li>
+                            <label>后端</label>
+                            <span>MySQL、WordPress、PHP</span>
+                        </li>
+                        <li>
+                            <label>其他</label>
+                            <span>Git、Markdown、SVN</span>
+                        </li>
+                    </ul>
+                </div>
+        </section>
+        <section class="main">
+            
+            <!-- 工作经历 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>工作经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[经历1]司科－前端开发工程师（实习）</span>
+                            <time>2016.9-2017.3</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>使用<mark>HTML、CSS、Bootstrap </mark>编写页面，通过优雅降级，处理各种浏览器兼容性问题;</li>
+                            <li>使用<mark>javascript</mark>实现页面中需要的效果;</li>
+                            <li>运用<mark>jQuery、mui</mark>等框架库,提高团队开发效率;</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[经历2]点创－前端开发工程师</span>
+                            <time>2017.3-2018.7</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>使用<mark>HTML5、CSS3、less、Bootstrap </mark>编写页面，通过优雅降级，处理各种浏览器兼容性问题;</li>
+                            <li>使用<mark>javascript和jQuery</mark>实现页面上的相应特效,包括图片的轮播等等;</li>
+                            <li>根据UI图纸,实现显示效果;</li>
+                            <li>使用<mark>ajax</mark>请求与后台交互调试接口;</li>
+                            <li>偶尔使用<mark>php</mark>书写后端接口;</li>
+                            <li>使用
+                                <mark>
+                                    <a href="https://github.com/ccsunny" target="_blank">
+                                    <i class="fa fa-link" aria-hidden="true"></i>GitHub</a>
+                                </mark>来管理代码,
+                                <mark>
+                                    <a href="http://47.98.144.147:9019/" target="_blank">
+                                        <i class="fa fa-link" aria-hidden="true"></i>博客文章</a>。
+                                </mark>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <!-- 项目经验 -->
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>个人项目</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[项目1]医学科学数据管理与共享平台</span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                            <time>201X.X-201X.X</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：ThinkPHP+MongoDB+Axure</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]实现多类型多来源医学科学数据的提交、管理和共享
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]同 2 位同专业同学一起
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]完成从
+                                <mark>“调研-设计-实现-文档”</mark>等工作，主要负责系统原型、功能框架及数据提交流程、元数据及源数据的管理与共享方案的设计以及系统开发等工作
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [效果]作品最终取得第三届共享杯国家级竞赛“一等奖” （2/2000）</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目2]肿瘤流行病数据可视化</span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                            <time>201X.X-201X.X</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：HTML 5+D3.js+ECharts+MySQL</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]实现常见肿瘤流行病数据多维度可视化展示、数据透视及分析
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]与 1 位同学
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]分析项目需求，清洗并整理相关数据(扩展第三方知识组织系统和 Google trends 数据)，并用
+                                <mark>D3.js</mark> 和
+                                <mark>ECharts</mark> 进行图形化展示以及实现简易自动分析 功能
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [效果]作品取得第二届共享杯国家级竞赛“特等奖”(1/1500)
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <!-- 教育经历 -->
+            <section class="edu info-unit">
+                <h2>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>教育经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>中南林业科技大学</span>
+                            <span id="education">大专(本科在读)</span>
+                        </h3>
+                    </li>
+                </ul>
+            </section>
+            <!-- 自我评价 -->
+            <section class="work info-unit">
+                <h2>👩‍🎓 自我评价/期望</h2>
+                <hr/>
+                <p>📜[见贤思齐焉,见不贤而内自省也]
+                    <!-- <span class="mark-txt">“见贤思齐焉,见不贤而内自省也”</span>是我最喜欢的名言。 -->
+                </p>
+            </section>
+        </section>
+    </article>
+    <footer class="footer">
+        <p>© 2018 Cecilia.文档最后更新时间为
+            <time>2018年07月20日</time></p>
+    </footer>
+    <!-- 侧栏 -->
+    <aside>
+        <ul>
+            <li>
+                <a href="https://github.com/ccsunny/resume" target="_blank">源代码</a>
+            </li>
+        </ul>
+    </aside>
+</body>
+</html>
